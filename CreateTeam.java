@@ -23,8 +23,10 @@ public class CreateTeam {
         p4.setPosition("Right Defence"); 
         p4.setJerseyNumber(9); 
         
-        //System.out.println(p4 instanceof Person);
-        //System.out.println(p4.getYear());
+        System.out.println(p4 instanceof Person);
+        //System.out.println(((Person)(p4.getYear())));
+        Person temp = (Person)p4;
+        System.out.println(temp.getYear());
         
         // Person p5 = new Person("Ghengis", 12);
         // System.out.println(p5.getYear());
@@ -44,5 +46,7 @@ public class CreateTeam {
         
         
         rr.display();
+        
+        
     }
 }
